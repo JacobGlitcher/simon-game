@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'pixel';
+  src: url("../fonts/ARCADECLASSIC.eot");
+  src: local("☺"), url("../fonts/ARCADECLASSIC.woff") format("woff"), url("../fonts/ARCADECLASSIC.ttf") format("truetype"), url("../fonts/ARCADECLASSIC.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "pixel";
+  background-color: #071c3a;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.simon {
+  padding: 40px 15px 0;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.simon__text-box {
+  color: #f5e6b4;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.simon__title {
+  word-spacing: 12px;
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.simon__subtitle {
+  word-spacing: 7px;
+  font-size: 25px;
+  -webkit-animation: bouncing 300ms linear 0s infinite alternate;
+          animation: bouncing 300ms linear 0s infinite alternate;
+}
+
+.simon__play-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
+  max-width: 330px;
+  margin: 0 auto;
+  justify-items: center;
+  row-gap: 15px;
+}
+
+.simon__box {
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  border: 5px solid #fff;
+}
+
+.simon__box:active {
+  -webkit-box-shadow: 0 0 30px 5px #fff;
+          box-shadow: 0 0 30px 5px #fff;
+}
+
+.simon__green {
+  background-color: #32cd32;
+}
+
+.simon__red {
+  background-color: #da2920;
+}
+
+.simon__yellow {
+  background-color: #ebbb2c;
+}
+
+.simon__blue {
+  background-color: #1E90FF;
+}
+
+@-webkit-keyframes bouncing {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    color: #f5e6b4;
+  }
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    color: #fff8e0;
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    color: #f5e6b4;
+  }
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    color: #fff8e0;
+  }
+}
+
+@media (max-width: 360px) {
+  .simon__text-box {
+    margin-bottom: 40px;
+  }
+  .simon__title {
+    font-size: 35px;
+  }
+  .simon__subtitle {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
